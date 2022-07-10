@@ -11,7 +11,9 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     // let image = json.image;
 
 
-    /*
+    let missionTarget = document.getElementById("missionTarget")
+    missionTarget.innerHTML = `
+    
                  <h2>Mission Destination</h2>
                  <ol>
                      <li>Name: </li>
@@ -21,8 +23,8 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
                      <li>Distance from Earth: </li>
                      <li>Number of Moons: </li>
                  </ol>
-                 <img src="">
-    */
+                 <img src=""> `
+
 }
 
 function validateInput(testInput) {
