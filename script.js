@@ -15,6 +15,33 @@ window.addEventListener("load", function () {
     }).then(function () {
         console.log(listedPlanets);
         // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
+
+        pickPlanet(listedPlanets).name
+
+
+        addDestinationInfo(document, pickPlanet(listedPlanets).name, diameter, star, distance, moons, imageUrl)
+
+
+
+
+        // fetch("https://handlers.education.launchcode.org/static/planets.json").then(function (response) {
+
+        // response.json().then(function (json) {
+        // let items = Math.floor(Math.random() * json.length);
+
+        //     let missionTar = document.getElementById("missionTarget");
+        //     missionTar.innerHTML = `
+        // <h2>Mission Destination</h2>
+        //     <ol>
+        //         <li>Name: ${json[items].name} </li>
+        //         <li>Diameter: ${json[items].diameter} </li>
+        //         <li>Star: ${json[items].star}</li>
+        //         <li>Distance from Earth: ${json[items].distance} </li>
+        //         <li>Number of Moons: ${json[items].moons} </li>
+        //     </ol>
+        //     <img src="${json[items].image}">
+
+
     })
 
     let list = document.getElementById("faultyItems")
